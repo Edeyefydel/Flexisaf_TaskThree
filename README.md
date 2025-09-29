@@ -7,8 +7,9 @@ This is a simple Spring Boot application built as part of my Flexisaf internship
 🚀 Features
 	•	Add a new book
 	•	Get all books
-	•	Get a book by ID
 	•	Delete a book
+	•   Add  a new Author
+	• 	Get all Authors
 
 ⸻
 
@@ -25,7 +26,7 @@ This is a simple Spring Boot application built as part of my Flexisaf internship
 
 1. Add a new book
 
-POST /books
+POST /api/books
 {
   "title": "Clean Code",
   "author": "Robert C. Martin",
@@ -34,15 +35,25 @@ POST /books
 
 2. Get all books
 
-GET /books
+GET /api/books
 
 ⸻
 
 3. Delete a book
 
-DELETE /books/{id}
+DELETE/api/books/{id}
 
 ⸻
+
+4. Add a new author
+{
+  "fitst_name": "Robert",
+  "last_name": "Martin",
+}
+
+5. Get all Authors
+GET/api/authors
+   
 
 📝 Author
 
