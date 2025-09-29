@@ -1,4 +1,4 @@
 package com.Flexisaf.lib_system.models;
 
-public class member {
+public class Member {
 }
