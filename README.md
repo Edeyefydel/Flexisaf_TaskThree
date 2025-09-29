@@ -1,54 +1,49 @@
-# 🚀 Spring Boot Setup with Maven
+📚 Library Management System – Task 3
 
-This project demonstrates setting up a **Spring Boot application using Maven** as the build tool.  
-It includes a simple REST API endpoint to verify the setup.
+This is a simple Spring Boot application built as part of my Flexisaf internship deliverables. It demonstrates basic CRUD operations for managing books in a library using Java, Spring Boot, JPA, and PostgreSQL.
 
----
+⸻
 
-## ✅ Features
-- Spring Boot initialized with **Maven build tool**
-- Embedded Tomcat server
-- Simple REST endpoint (`/hello`)
+🚀 Features
+	•	Add a new book
+	•	Get all books
+	•	Get a book by ID
+	•	Delete a book
 
----
+⸻
 
-## 🛠️ Tech Stack
-- **Java 17+**
-- **Spring Boot**
-- **Maven**
-- **Tomcat (embedded)**
+⚡ Tech Stack
+	•	Java
+	•	Spring Boot
+	•	Spring Data JPA
+	•	PostgreSQL
+	•	Maven
 
----
+⸻
 
-## ⚙️ Setup & Run
+🔗 Endpoints
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/springboot-maven-setup.git
-cd springboot-maven-setup
-```
+1. Add a new book
 
-### 2. Build & Run the app
-```bash
-mvn spring-boot:run
-```
+POST /books
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "published_year": 2008
+}
 
-### 3. Test the endpoint
-Open your browser or Postman and visit:
-```
-http://localhost:8080/hello
-```
+2. Get all books
 
-Expected Response:
-```text
-Hello Springboot is working!
-```
+GET /books
 
----
+⸻
 
-## 📫 Author
-👤 **Edeye Emmanuel**
-# Library_management
-# Flexisaf_TaskThree
-"# Flexisaf_TaskThree" 
-"# Flexisaf_TaskThree" 
+3. Delete a book
+
+DELETE /books/{id}
+
+⸻
+
+📝 Author
+
+Edeye Emmanuel
